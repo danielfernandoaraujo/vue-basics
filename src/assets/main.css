@@ -1,0 +1,49 @@
+body{
+  margin: 0px;
+  background-color: black;
+  color: white;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+.componente{
+  background-color: #fa8282;
+  padding: 30px;
+  margin: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.componente:hover{
+  background-color: #13b939;
+}
+
+h1{
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.componente p{
+  font-weight: bold;
+  font-family: 'Lucida Sans', sans-serif;
+}
+
+button{
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+}
+
+input{
+  border-radius: 5px;
+  padding: 20px;
+  font-size: large;
+}
