@@ -5,10 +5,17 @@ body{
 }
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   font-weight: normal;
+}
+
+header{
+  font-size: 2em;
+  color: white;
+  margin-bottom: 20px;
+  background-color: #02b677;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
 }
 
 .componente{

@@ -8,14 +8,13 @@ import EscutaEvento from "./components/EscutaEvento.vue";
 </script>
 
 <template>
+  <header>Estudo dos conceitos basicos do Vue.js</header>
+  <EscutaEvento/>
   <ComProps item="borracha" :value="2.1"/>
   <ComProps item="lapis" :value="2.5"/>
   <ComDadosReativosNaoPrimitivos/>
   <ComDadosReativosPrimitivos/>
-  <PrimeiroComponente/>
   <DataBinding/>
+  <PrimeiroComponente/>
 </template>
 
-<style scoped>
-
-</style>
