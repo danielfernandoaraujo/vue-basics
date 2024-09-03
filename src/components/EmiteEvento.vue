@@ -1,7 +1,8 @@
 <template>
     <div class="componente">
-        <h1>Componente com Props</h1>
+        <h1>Componente que emite evento</h1>
         <p>Nome: {{ item }} | Valor: {{ value.toFixed(2) }}</p>
+        <button>Adicionar ao carrinho</button>
     </div>
 </template>
 
