@@ -2,16 +2,23 @@
     <div class="componente">
         <h1>Componente que emite evento</h1>
         <p>Nome: {{ item }} | Valor: R${{ value.toFixed(2) }}</p>
-        <button>Adicionar ao carrinho</button>
+        <button @click="adicionar">Adicionar ao carrinho</button>
     </div>
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
+import { defineProps, defineEmits } from 'vue';
 
-defineProps({
+const props = defineProps({
     item:String,
     value:Number
 })
+
+const emit = defineEmits(["foiAdicionado"])
+
+function adicionar(){
+    emit("foiAdicionado", props.value)
+}
+
 </script>
 

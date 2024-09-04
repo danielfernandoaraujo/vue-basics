@@ -5,10 +5,12 @@ import ComDadosReativosNaoPrimitivos from "./components/ComDadosReativosNaoPrimi
 import DataBinding from "./components/DataBinding.vue";
 import ComProps from "./components/ComProps.vue";
 import EscutaEvento from "./components/EscutaEvento.vue";
+import PropriedadesComputada from "./components/PropriedadesComputada.vue";
 </script>
 
 <template>
   <header>Estudo dos conceitos basicos do Vue.js</header>
+  <PropriedadesComputada/>
   <EscutaEvento/>
   <ComProps item="borracha" :value="2.1"/>
   <ComProps item="lapis" :value="2.5"/>
