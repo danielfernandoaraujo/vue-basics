@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-import { ref, watch } from 'vue';
+import { ref, watchEffect } from 'vue';
 const today = new Date();
 const year = today.getFullYear()
 
@@ -18,11 +18,19 @@ const anoNascimento = ref(0)
 const anoAtual = ref(year)
 const idade = ref(0)
 
-watch(anoAtual, (ano)=>{
-    idade.value = ano - anoNascimento.value
-})
-watch(anoNascimento, (ano)=>{
-    idade.value = anoAtual.value - ano 
+// Forma de usar o watch
+
+// watch(anoAtual, (ano)=>{
+//     idade.value = ano - anoNascimento.value
+// })
+// watch(anoNascimento, (ano)=>{
+//     idade.value = anoAtual.value - ano 
+// })
+
+// Forma de usar o watch effect.
+
+watchEffect(()=>{
+    idade.value = anoAtual.value - anoNascimento.value
 })
 
 </script>
